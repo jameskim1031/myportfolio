@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>James Personal Portfolio</title>
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <h3 class="nav-name"><a href="index.html">James Kim</a></h3>
+            <div class="nav-options">
+                <button class="nav-about"><a href="about.html">About</a></button>
+                <button class="nav-projects"><a href="#down">Projects</a></button>
+                <button class="nav-contact"><a href="contact.html">Contact</a></button>
+            </div>
+        </nav>
+        <main>
+            <div>
+                <h3 class = "main-title">Software Engineer</h3>
+                <h1 class = "main-intro">Hello,  my name is James Kim</h1>
+                <h4 class = "main-info">I am a student at Northwestern Univeristy, studying Computer Science and Psychology. I am a full stack engineer passionate about mental health. Nice to meet you!</h4>
+                <div>
+                    <button class="button-resume"><a class="resume-link" href="https://docs.google.com/document/d/177OZB-rkCqeKmh9YDgz7MsyFjhArXnRv/edit?usp=sharing&ouid=118326508956394560357&rtpof=true&sd=true">Resume</a></button>
+                    <button class="button-project"><a href="#down">Projects</a></button>
+                </div>
+            </div>
+            <img class="main-image" src="./images/jamesfinal.png" alt="Picture of me"/>
+        </main>
+        <section>
+            <div id="down">
+                <h1 id="Projects-title">Projects</h1>
+                <div id="line"></div>
+                <div class="maincontainer">
+                    <div class="card" id="card">
+                        <div class="front">
+                            <div class="front-info">
+                                <h1>Northwestern PeerChat</h1>
+                                <h2>NUPC is a peer-to-peer video and text chatting platform that provides students with someone to talk to anonymously, 24/7. </h2>
+                                <button id="view-project">View Project</button>
+                            </div>
+                            <div class="front-image">
+                                <img src="./images/nupclogo.png" alt="Logo of NUPC"/>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="back-image">
+                                <img class="back-landing"src="./images/landing.png" alt="landing page of NUPC"/>
+                                <img class="back-waiting" src ="./images/waiting.png" alt="waiting page of NUPC"/>
+                            </div>
+                            <div class="back-info">
+                                <h1 class="back-product">Product</h1>
+                                <ol>
+                                    <li>On-Demand Peer Chats: Log on to nupc.live at any time of the day to chat with a peer.
+                                    </li>
+                                    <li>Anonymous Options: Choose to video chat, voice call, or text anonymously with a peer.
+                                    </li>
+                                </ol>
+                                <h1 class="back-technologies">Technologies</h1>
+                                <ol>
+                                    <li>Packages: Node.js,Express.js, Nodemon, Mongoose, Apache/Nginx
+                                    </li>
+                                    <li>APIs, Databases, and Web Hosting: Video SDK, MongoDB Atlas, Amazon EC2, Google Authentication
+                                    </li>
+                                    <li>Programming Languages: HTML, CSS, Javascript
+                                        
+                                    </li>
+                                </ol>
+                                <button id="view-project2">Go back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maincontainer2">
+                    <div class="card" id="card">
+                        <div class="front">
+                            <div class="front-image2">
+                                <img src="./images/photo-app.png" alt="screenshot of photo-app"/>
+                            </div>
+                            <div class="front-info">
+                                <h1>Photo App</h1>
+                                <h2>A fully functional Instagram app made using Javascript for front-end, MySQL for back-end, and Flask for web-app framework </h2>
+                                <button id="view-project">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="index.js"></script>
+</html>

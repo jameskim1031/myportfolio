@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+   }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:120px;
+    margin-right:100px;
+}
+
+.nav-options > button {
+    font-family: 'Comfortaa';
+    font-weight: bolder;
+    font-size: 18px;
+    background: none;
+    border:none;
+}
+
+.nav-name {
+    font-family: 'Comfortaa';
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.nav-options > button {
+    margin-left:20px;
+}
+
+#on-contact, #on-about {
+    text-decoration: underline;
+}
+
+main {
+    display:flex;
+    justify-content: space-between;
+    margin-top:30px;
+    margin-left:120px;
+}
+
+.main-title {
+    font-family: 'nunito';
+    font-weight:lighter;
+    font-size: 20px;
+    color: #A6C0CA;
+}
+
+.main-intro {
+    width:500px;
+    margin-top:0px;
+    font-family: 'Playfair Display', serif;
+    font-size:64px;
+}
+
+.main-image {
+    width:450px;
+    margin-top:-40px;
+    margin-right: 150px;
+}
+
+.main-info {
+    width:480px;
+    margin-top:0px;
+    font-family: 'nunito';
+    font-weight: lighter;
+    font-size:24px;
+    color: #828282;
+}
+
+.button-resume {
+    border: 1px solid black;
+    background: none;
+    border-radius:5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size:18px;
+    padding:6px 20px;
+    margin-right:15px;
+}
+
+.button-project {
+    border: none;
+    background: #A6C0CA;
+    border-radius:5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size:18px;
+    padding:6px 20px;
+}
+
+a {
+    color: black;
+    text-decoration:none;
+}
+
+a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#view-project:hover, #view-project2:hover{
+    box-shadow: rgba(76, 76, 114, 0.2) 10px 10px 29px 10px;
+}
+
+section {
+    margin-top:50px;
+    height:1350px;
+}
+
+#down {
+    padding-top:1px;
+    text-align: center;
+} 
+
+#Projects-title {
+    font-size:48px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1px;
+}
+
+#line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100px; 
+    height:3px;
+    background: #A6C0CA;
+
+}
+
+.maincontainer {
+    position: absolute;
+    width:992px;
+    height:524px;
+    background:none;
+    margin-left:50%;
+    margin-top:20%;
+    transform: translate(-50%,-50%);
+    border-radius:30px;
+}
+
+.card {
+    position: relative;
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    transition: all 0.8s ease;
+    
+}
+
+.front {
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+    color: #000;
+    text-align:center;
+    border-radius:30px;
+    display:flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.back {
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    border:1px solid #A6C0CA;
+    text-align: center;
+    border-radius:30px;
+    display:flex;
+    transform:rotateY(180deg);
+}
+
+.flipCard {
+    transform:rotateY(180deg);
+}
+
+.front-info {
+    width:50%;
+    text-align: left;
+}
+
+.front-image {
+    width:50%;
+    background-color: #A6C0CA;
+    border-radius: 0px 30px 30px 0px;
+    padding-left:10px;
+}
+
+.front-image > img, .front-image2 > img {
+    width:90%;
+    margin-top:19%;
+}
+
+.front-info > h1 {
+    margin-top:30%;
+    text-align: left;
+    margin-left:30px;
+    font-family: 'Playfair Display', serif;
+    font-size:35px;
+}
+
+.front-info > h2 {
+    margin-left:30px;
+    font-family: 'nunito';
+    color: #828282;
+    font-size:18px;
+    text-align: left;
+    font-weight: lighter;
+    width:360px;
+    line-height: 1.6em;
+}
+
+.front-info > button {
+    width:150px;
+    height:43px;
+    border-radius:30px;
+    margin-left:30px;
+    margin-top:5px;
+    border: 1px solid black;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bolder;
+    font-size:18px;
+}
+
+
+/*  */
+.back-info {
+    width:50%;
+    text-align: left;
+}
+
+.back-image {
+    width:50%;
+    background-color: #A6C0CA;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.back-landing {
+    margin-top:8%;
+    width:95%;
+}
+
+.back-waiting {
+    margin-top:1%;
+    width:95%;
+}
+
+.back-product{
+    margin-top:4%;
+    text-align: left;
+    margin-left:30px;
+    font-family: 'Playfair Display', serif;
+    font-size:35px;
+}
+
+.back-info > ol {
+    margin-top:-10px;
+    font-family: 'nunito';
+    color: #828282;
+    font-size:18px;
+    text-align: left;
+    font-weight: lighter;
+    width:98%;
+    line-height: 1.6em;
+}
+
+.back-info > button {
+    width:150px;
+    height:43px;
+    border-radius:30px;
+    margin-top:5px;
+    border: 1px solid black;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bolder;
+    font-size:18px;
+    margin-left:60%;
+}
+
+.back-technologies {
+    text-align: left;
+    margin-left:30px;
+    font-family: 'Playfair Display', serif;
+    font-size:35px;
+}
+
+.card2 {
+    margin-top:70px;
+}
+
+.maincontainer2 {
+    position: absolute;
+    width:992px;
+    height:524px;
+    background:none;
+    margin-left:50%;
+    margin-top:59%;
+    transform: translate(-50%,-50%);
+    border-radius:30px;
+}
+
+.front-image2 {
+    width:50%;
+    background-color: #A6C0CA;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.front-image2 > img{
+    width:70%;
+    margin-top:7%;
+}
+
+.contacts-title {
+    font-family: 'Playfair Display', serif;
+    font-size:48px;
+}
+
+.contact-info {
+    list-style-type: none;
+    font-family: 'nunito';
+    font-weight: lighter;
+    font-size:24px;
+    color: #828282;
+    padding-left:0;
+}
+
+.contacts-image {
+    width:300px;
+}
+
+.social-media  img {
+    width:50px;
+    border-radius:10px;
+    margin-right:10px;
+}
+
+.about {
+    display: flex;
+}
+
+.about > img{
+    width:500px;
+    margin-left:100px;
+}
+
+.about-info {
+    width:600px;
+    margin-top:0px;
+    font-family: 'nunito';
+    font-weight: lighter;
+    font-size:24px;
+    color: #828282;
+}
